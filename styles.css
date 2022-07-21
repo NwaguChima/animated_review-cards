@@ -17,3 +17,8 @@ body {
   -ms-border-radius: 23px;
   -o-border-radius: 23px;
 }
+
+.title {
+  font-size: 34px;
+  font-family: Merriweather, serif;
+}
