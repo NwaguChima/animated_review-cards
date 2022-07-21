@@ -6,6 +6,7 @@
 
 body {
   font-family: Poppins, sans-serif;
+  font-size: 16px;
 }
 
 .card {
@@ -21,4 +22,41 @@ body {
 .title {
   font-size: 34px;
   font-family: Merriweather, serif;
+  flex-grow: 1;
+}
+
+.average-rating {
+  font-size: 26px;
+}
+
+.average-rating-section {
+  font-size: 14px;
+  padding: 17px;
+  font-weight: 500;
+  background-color: white;
+  border-radius: 0 7px 20px 0 rgba(115 116 156 0.08);
+  border-radius: 15px;
+  -webkit-border-radius: 0 7px 20px 0 rgba(115 116 156 0.08);
+  -moz-border-radius: 0 7px 20px 0 rgba(115 116 156 0.08);
+  -ms-border-radius: 0 7px 20px 0 rgba(115 116 156 0.08);
+  -o-border-radius: 0 7px 20px 0 rgba(115 116 156 0.08);
+}
+
+.star-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.average-rating-section .star-icon {
+  width: 46px;
+  height: 46px;
+}
+
+.star-icon .icon-path {
+  fill: #ffd66c;
+  stroke: #ef8153;
+}
+
+.header {
+  display: flex;
 }
