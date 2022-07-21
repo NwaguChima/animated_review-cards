@@ -71,6 +71,7 @@ body {
   margin-bottom: 56px;
 }
 
+/* Search Bar */
 .search-bar {
   display: flex;
   align-items: center;
@@ -98,4 +99,64 @@ body {
   padding-left: calc(10px + 16px + 16px);
   border: none;
   width: 100%;
+}
+
+/* Review Section */
+.review-section {
+}
+
+.review-title {
+  margin-bottom: 16px;
+}
+
+.review-row {
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.review-number {
+  font-weight: bold;
+}
+
+.review-bar {
+  --border-width: 1px;
+  position: relative;
+  flex-grow: 1;
+  background-color: #eeeeee;
+  border-color: #c9c9c9;
+  height: 10px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.review-bar::after {
+  content: "";
+  position: absolute;
+  top: calc(-1 * var(--border-width));
+  bottom: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  right: calc(-1 * var(--border-width));
+  width: calc(2 * var(--border-width) + var(--width));
+  border: 1px solid #efb153;
+  background-color: #ffd66c;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.review-bar.empty::after {
+  content: none;
+}
+
+.review-row:last-child {
+  margin-bottom: 0;
 }
