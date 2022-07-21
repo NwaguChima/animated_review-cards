@@ -74,6 +74,7 @@ body {
 .search-bar {
   display: flex;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .search-input-icon {
