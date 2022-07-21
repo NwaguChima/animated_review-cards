@@ -103,6 +103,7 @@ body {
 
 /* Review Section */
 .review-section {
+  margin-bottom: 56px;
 }
 
 .review-title {
@@ -159,4 +160,25 @@ body {
 
 .review-row:last-child {
   margin-bottom: 0;
+}
+
+/* Review Button */
+.review-btn {
+  background-color: hsl(238, 49%, 19%);
+  color: white;
+  padding: 16px 24px;
+  font-size: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline-color: hsl(238, 49%, 79%);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.review-btn:hover {
+  background-color: hsl(238, 49%, 29%);
 }
