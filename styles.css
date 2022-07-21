@@ -68,4 +68,33 @@ body {
   display: flex;
   align-items: center;
   gap: 80px;
+  margin-bottom: 56px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-input-icon {
+  position: absolute;
+  height: 48px;
+  padding: 16px;
+  pointer-events: none;
+}
+
+.search-input {
+  padding: 16px;
+  background-color: white;
+  font-weight: 500;
+  font-size: inherit;
+  border-radius: 26px;
+  -webkit-border-radius: 26px;
+  -moz-border-radius: 26px;
+  -ms-border-radius: 26px;
+  -o-border-radius: 26px;
+
+  padding-left: calc(10px + 16px + 16px);
+  border: none;
+  width: 100%;
 }
