@@ -43,11 +43,18 @@ Object.entries(REVIEWS)
     reviewNumber.textContent = value;
     reviewNumber.classList.add("review-number");
     reviewRowsContainer.append(reviewNumber);
-    reviewRowsContainer.append(starIcon);
+    const startIconWrapper = document.createElement("div");
+    startIconWrapper.innerHTML = starIcon;
+    reviewRowsContainer.append(startIconWrapper);
 
     const reviewBar = document.createElement("div");
     reviewBar.classList.add("review-bar");
+    reviewBar.style.setProperty(
+      "--width",
+      `${(quantity / totalReviews) * 100}%`
+    );
     reviewBar.classList.toggle("empty", quantity === 0);
+    reviewRowsContainer.append(reviewBar);
   });
 
 {
