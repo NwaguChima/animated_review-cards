@@ -55,6 +55,11 @@ Object.entries(REVIEWS)
     );
     reviewBar.classList.toggle("empty", quantity === 0);
     reviewRowsContainer.append(reviewBar);
+
+    const reviewCount = document.createElement("div");
+    reviewCount.textContent = quantity;
+    reviewCount.classList.add("review-count");
+    reviewRowsContainer.append(reviewCount);
   });
 
 {
