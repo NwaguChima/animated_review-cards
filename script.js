@@ -57,13 +57,24 @@ Object.entries(REVIEWS)
     reviewRowsContainer.append(reviewBar);
 
     const reviewCount = document.createElement("div");
-    reviewCount.textContent = quantity;
+    reviewCount.dataset.endValue = quantity;
+    reviewCount.dataset.currentValue = 0;
+    reviewCount.textContent = 0;
     reviewCount.classList.add("review-count");
     reviewRowsContainer.append(reviewCount);
   });
 
-{
-  /* <div class="review-number">5</div>
-<div class="review-bar empty"></div>
-<div class="review-count"></div> */
+let lastTime;
+function update(time) {
+  if (lastTime != null) {
+    const delta = time - lastTime;
+    const updateEl = document.querySelectorAll("[data-end-value]");
+    updateEl.forEach((el) => {
+      const currentValue = el.dataset.currentValue;
+      const endValue = el.dataset.endValue;
+    });
+  }
+
+  lastTime = time;
+  requestAnimationFrame(update);
 }
